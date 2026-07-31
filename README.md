@@ -253,18 +253,6 @@ every endpoint manually.
 
 ---
 
-## 👥 Team
-
-| Name | Role |
-|---|---|
-| *(add team member names & roll numbers here)* | |
-
-**Guide:** *(add guide name here)*
-**Department:** Information Technology
-**College:** Anjuman-i-Islam's M. H. Saboo Siddik College of Engineering
-
----
-
 ## 📄 License
 
 Developed for academic purposes as part of the BE (IT) Major Project — Sem VII, 2026.
