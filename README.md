@@ -255,4 +255,4 @@ every endpoint manually.
 
 ## 📄 License
 
-Developed for academic purposes as part of the BE (IT) Major Project — Sem VII, 2026.
+Developed as a personal project to solve real-world problems and explore practical technology solutions.
