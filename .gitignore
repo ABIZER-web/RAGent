@@ -1,0 +1,25 @@
+# Secrets — never commit these
+.env
+.env.*
+PRIVATE_README.md
+.streamlit/secrets.toml
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Local data (per-user knowledge bases, chats, cache, uploads, feedback)
+vectorstore/
+data/uploaded_docs/
+data/chats_*.json
+data/users.json
+data/cache/
+data/feedback/
+
+# OS/editor junk
+.DS_Store
+.vscode/
+*.swp

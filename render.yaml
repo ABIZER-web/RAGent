@@ -1,0 +1,26 @@
+# Render Blueprint — deploys the RAGent backend automatically.
+# On render.com: New -> Blueprint -> connect this repo -> Render reads this file.
+#
+# You will still need to manually set the secret environment variables
+# (GEMINI_API_KEY, APP_USERNAME, APP_PASSWORD) in the Render dashboard after
+# the first deploy, since secrets should never be committed to a repo.
+
+services:
+  - type: web
+    name: ragent-backend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: APP_USERNAME
+        sync: false
+      - key: APP_PASSWORD
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: "*"

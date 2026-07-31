@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+streamlit
+requests
+pypdf
+python-docx
+pymupdf
+sentence-transformers
+numpy
+google-genai
